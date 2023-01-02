@@ -62,8 +62,8 @@ h1 {
 }
 
 .profile-photo {
-  width: var(--profile-photo-size);
-  margin-top: -10px;
+  width: 180px;
+  margin-left: -50px;
 }
 
 section {
@@ -71,7 +71,7 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+
   /* border: 1px solid white; */
 }
 
@@ -90,6 +90,28 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.aula-linkdev {
+  background-color: var(--blue);
+  height: 100px;
+  flex-direction: column;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 1.75s;
+}
+
+@keyframes pulse {
+  50% {
+    filter: brightness(1.2);
+    transform: translateY(1.5px);
+  }
+
+  0% {
+    filter: brightness(1);
+    transform: translateY(0px);
+  }
 }
 
 .link:first-child {
